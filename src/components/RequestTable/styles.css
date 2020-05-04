@@ -1,0 +1,18 @@
+
+/*TABLETS*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/*PHONEZ*/
+@media (max-width: 767.99px) {
+  .the-pagination{
+    font-size: 10px;
+  }
+}
+.isActive {
+  background-color: #20a8d8 !important;
+  color: white !important;
+}
+.container{
+  position: relative;
+}

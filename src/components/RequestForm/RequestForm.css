@@ -1,0 +1,52 @@
+.flag-container {
+  padding-left: 0px;
+}
+/*FOR BIG SCREENs*/
+@media (min-width: 1025px)  and (max-width: 1440px){
+  .push-left{
+    margin-left: 250px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1024px){
+  .push-left{
+    margin-left: 100px;
+  }
+}
+/*FOR TABLETS*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .input-f {
+    width: 100%;
+  }
+}
+
+/*FOR 4ns*/
+@media (max-width: 767.99px) {
+.input-f {
+  width: 100%;
+}
+}
+.update-form-container {
+  position: fixed;
+  padding-top: 0px;
+  margin-left: -30px;
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+.create-form-container {
+  position: fixed;
+  padding-top: 0px;
+  margin-left: -30px;
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+.closer{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  /* background-color: red; */
+}

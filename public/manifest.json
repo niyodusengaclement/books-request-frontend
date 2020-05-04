@@ -1,10 +1,10 @@
 {
-  "short_name": "CoreUI-React",
-  "name": "CoreUI-React sample",
+  "short_name": "BMS",
+  "name": "Books Management System",
   "icons": [
     {
-      "src": "./assets/img/favicon.png",
-      "sizes": "100x100",
+      "src": "./assets/img/sda.png",
+      "sizes": "728x512",
       "type": "image/png"
     }
   ],
