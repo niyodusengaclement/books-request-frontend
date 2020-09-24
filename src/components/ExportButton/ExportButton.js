@@ -23,13 +23,8 @@ pdfExport = () => {
   
   render() {
     return (
-      <Button color="primary">
-      <a href="requests.pdf"
-        className="button text-white fontWeight-5"
-        onClick={this.pdfExport}download
-      >
-      Export PDF
-      </a>
+      <Button onClick={this.pdfExport} color="primary">
+        Export PDF
       </Button>
     );
   }
