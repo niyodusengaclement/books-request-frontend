@@ -1,0 +1,7 @@
+{
+  "name": "sda",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
