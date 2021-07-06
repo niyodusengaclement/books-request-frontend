@@ -11,19 +11,28 @@ class SendRequest extends Component {
       churchId,
       churchName
     }
+
     let church = churchId ? localStorage.setItem('request_church_info', JSON.stringify(churchInfo)) : null;
     church = JSON.parse(localStorage.getItem('request_church_info'));
 
     window.history.replaceState(null, null, '/create-request');
-    const { role } = userInfo();
+    const { role, name, id_code } = userInfo();
     const error = {
       status: 403,
       message: 'Access denied, This page accessed by Pastors only'
     }
+    
+    const payload = {
+      name,
+      pastor_code: id_code,
+      ...church,
+      ...churchInfo,
+    }
+
     if (role !== 'pastor') return <ErrorPage error={error} />
     return (
       <div className="animated fadeIn">
-        <RequestForm church={church} />
+        <RequestForm payload={payload} church={church} />
       </div>
     );
   }
