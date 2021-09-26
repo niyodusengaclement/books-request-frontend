@@ -10,7 +10,7 @@
     "url": "git+https://github.com/niyodusengaclement/books-request-frontend.git"
   },
   "dependencies": {
-    "@capacitor/android": "3.0.1",
+    "@capacitor/android": "3.2.3",
     "@capacitor/cli": "^3.0.1",
     "@capacitor/core": "^3.0.1",
     "@coreui/coreui": "^2.1.12",
@@ -25,6 +25,7 @@
     "core-js": "^3.6.5",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "flutterwave-react-v3": "^1.1.0",
     "font-awesome": "^4.7.0",
     "history": "^4.10.1",
     "jspdf": "^1.5.3",
