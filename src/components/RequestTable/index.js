@@ -76,6 +76,10 @@ class RequestTable extends Component {
       );
     }
 
+    console.log("=======================");
+    console.log(requests)
+    console.log("=======================");
+  
     return (
       <div className="container">
         <Row>
@@ -157,7 +161,7 @@ class RequestTable extends Component {
                   </thead>
                   <tbody>
                     {requests.length > 0 ? (
-                      requests.map((req, i) => (
+                      requests?.filter(({ nbr }) => nbr !== "0")?.map((req, i) => (
                         <tr key={i}>
                           <td>
                             {req.bookname === "bible_study"

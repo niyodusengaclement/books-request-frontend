@@ -68,6 +68,7 @@ class MissionReport extends Component {
     const body = {
       category: "mission_report",
       term: data.term,
+      name: this.props.payload?.name,
       id_code: this?.props?.payload?.pastor_code,
       year: data.year,
       church: this.state.church,
